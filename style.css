@@ -4,17 +4,17 @@ body {
 
 .main-div {
     max-width: 1200px;
-    margin-left: 300px;
-    margin-top: 200px;
+    margin-left: 360px;
+    margin-top: 150px;
 }
 
 .form-container {
-    background-color: gray;
+    background-color: rgb(71, 71, 71);
     padding-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 500px;
-    height: 180px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,28 +35,6 @@ body {
     border-radius: 4px;
 }
 
-.color-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-    margin-left: 100px;
-    width: 100px;
-}
-
-.color-button:hover {
-    background-color: #dc3545;
-}
-
-.color-button:active {
-    background-color: #ffc107;
-}
-
-
 @keyframes typing {
     from {
         width: 0;
@@ -73,7 +51,7 @@ body {
     font-family: monospace;
     overflow: hidden;
     white-space: nowrap;
-    margin: 0 auto;
+    margin: 0px;
     letter-spacing: .15em;
     animation: typing 4s steps(30, end);
     padding-top: 10px;
@@ -82,7 +60,39 @@ body {
 }
 
 
+.btn-grad {
+    background-image: linear-gradient(to right, #E6DADA 0%, #274046 51%, #E6DADA 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px  black;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
 @media screen and (max-width: 600px) {
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    
     .main-div {
         max-width: 0px;
         margin-left: 0px;
@@ -94,29 +104,13 @@ body {
         padding-bottom: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 350px;
-        margin-left: 15px;
-        margin-top: 250px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        width: 375px;
+        margin-left: 0px;
+        height: 650px;
+        text-align: center;
 
     }
 
-    .form-container input {
-        display: block;
-        width: 100%;
-        margin-bottom: 10px;
-        height: 100%;
-    }
-
-    .form-container input {
-        padding: 8px;
-        border: 1px solid #cccccc;
-        border-radius: 4px;
-    }
 
     .color-button {
         padding: 10px 20px;
@@ -139,9 +133,6 @@ body {
         background-color: #ffc107;
     }
 
-    .h1 {
-        margin-left: 10px;
-    }
 
     @keyframes typing {
         from {
@@ -164,5 +155,19 @@ body {
         animation: typing 4s steps(30, end);
         padding-top: 10px;
         padding-bottom: 20px;
-        padding-left: 20px;
+        padding-left: 50px;
     }
+
+    .main-para{
+       height: 200px;
+       width: 320px;
+       white-space: normal;
+       
+
+    }
+    .h1{
+        line-height: 30px;
+        text-align: center;
+    }
+    
+}
